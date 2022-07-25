@@ -1,0 +1,120 @@
+
+dev@ubuntu:~/www/temp/ico2$ truffle compile --network c4ei
+
+Compiling your contracts...
+===========================
+> Compiling ./contracts/Crowdsale.sol
+> Compiling ./contracts/KYCContract.sol
+> Compiling ./contracts/KryptoniteToken.sol
+> Compiling ./contracts/KryptoniteTokenSale.sol
+> Compiling ./contracts/Migrations.sol
+> Compiling @openzeppelin/contracts/GSN/Context.sol
+> Compiling @openzeppelin/contracts/access/Ownable.sol
+> Compiling @openzeppelin/contracts/math/SafeMath.sol
+> Compiling @openzeppelin/contracts/token/ERC20/ERC20.sol
+> Compiling @openzeppelin/contracts/token/ERC20/IERC20.sol
+> Compiling @openzeppelin/contracts/token/ERC20/SafeERC20.sol
+> Compiling @openzeppelin/contracts/utils/Address.sol
+> Compiling @openzeppelin/contracts/utils/Context.sol
+> Compiling @openzeppelin/contracts/utils/ReentrancyGuard.sol
+> Artifacts written to /home/dev/www/temp/ico2/client/src/contracts
+> Compiled successfully using:
+   - solc: 0.6.6+commit.6c089d02.Emscripten.clang
+
+dev@ubuntu:~/www/temp/ico2$ truffle migrate --network c4ei --reset
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+
+Starting migrations...
+======================
+> Network name:    'c4ei'
+> Network id:      21004
+> Block gas limit: 8000000 (0x7a1200)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x45013bdeaf8d275c27b57af20f0c5a44b1af7fbf66dba67d75d448c5a078aae8
+   > Blocks: 0            Seconds: 8
+   > contract address:    0xa14e5A5051790D3baccdd7c8Afe6b7a96BB6cAac
+   > block number:        576634
+   > block timestamp:     1658756826
+   > account:             0x286A6CE75d9f623FfbA96fC2175FD5fbE2690746
+   > balance:             59538.6940227124
+   > gas used:            164391 (0x28227)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00328782 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00328782 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'KryptoniteToken'
+   ---------------------------
+   > transaction hash:    0x61e336eeaddb5a05bfe65ff9c68068713772949f5b5b1163804228688a1649b0
+   > Blocks: 0            Seconds: 0
+   > contract address:    0xc35344d054761df664EAceD2cC22469B0A65AeF1
+   > block number:        576636
+   > block timestamp:     1658756841
+   > account:             0x286A6CE75d9f623FfbA96fC2175FD5fbE2690746
+   > balance:             59538.6709868524
+   > gas used:            1109452 (0x10edcc)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.02218904 ETH
+
+
+   Deploying 'KYCContract'
+   -----------------------
+   > transaction hash:    0xd1edddb44515f9c3408d2635513729f2d9031ead1cce35b97b62affaef272806
+   > Blocks: 0            Seconds: 8
+   > contract address:    0x7036A7Dd0318e954409D3D4Dc75bd634D574524c
+   > block number:        576637
+   > block timestamp:     1658756845
+   > account:             0x286A6CE75d9f623FfbA96fC2175FD5fbE2690746
+   > balance:             59538.6618533924
+   > gas used:            456673 (0x6f7e1)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00913346 ETH
+
+
+   Deploying 'KryptoniteTokenSale'
+   -------------------------------
+   > transaction hash:    0xdd9117f39da6a48001f8b53d087b4c259da298bce51d6307030083d61aca1e96
+   > Blocks: 0            Seconds: 4
+   > contract address:    0x0079B836419998004727A0DD6dA6d7fDf79265B1
+   > block number:        576638
+   > block timestamp:     1658756857
+   > account:             0x286A6CE75d9f623FfbA96fC2175FD5fbE2690746
+   > balance:             59538.6441763124
+   > gas used:            883854 (0xd7c8e)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01767708 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.04899958 ETH
+
+
+Summary
+=======
+> Total deployments:   4
+> Final cost:          0.0522874 ETH
